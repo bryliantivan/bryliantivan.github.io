@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pengaduan</title>
+    <link rel="stylesheet" href="css/style03.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="nav-form">
+        <div class="nav-logo">
+            <a href="#">
+                <img src="images/logo.svg"/> <!-- Path relatif ke file gambar -->
+            </a>
+        </div>
+        
+        <ul class="nav-links">
+            <li class="link" style="width:4.5rem"><a href="01_Beranda.html"><img src="images/home.png"/></a></li>
+            <li class="link"><a href="02_Makanan.html">Menu Makanan</a></li>
+            <li class="link"><a href="03_Form_pengaduan.html">Form Pengaduan</a></li>
+            <li class="link"><a href="05_Form_Peminjaman.html">Fasilitas</a></li>
+            <li class="link" style="width:3rem"><a href="#"><img src="images/loc.png"/></a></li>
+            <li class="link"><a href="04_Login.html" style="display: flex">Log-in<img src="images/profile.png" style="margin: 0 0 0 0.618rem"/></a></li>
+        </ul>
+      </nav>
+
+    <div class="atas">
+        <h1>
+            Formulir Pengaduan
+        </h1>
+        <p class="">
+            Jika Anda memiliki hal untuk dilaporkan terkait fasilitas maupun hal lainnya, 
+            <br>Anda dapat melaporkan hal tersebut di sini
+        </p>
+    </div>
+
+    <div class="isi">
+        <div class="isi-kiri">
+           <img src="images/bli2.svg" alt="">
+           <div class="tulisan-kiri">
+                <h2>Informasi Kontak</h2>
+                <p>
+                Kami selalu berusaha untuk meningkatkan 
+                fasilitas dan pelayanan kami agar dapat 
+                memberikan pengalaman terbaik kepada peserta
+                </p>
+           </div>
+
+           <div class="telpon">
+                <img src="images/telpon.png" alt="">
+                <p>+62 812 3456 789</p>
+           </div>
+
+           <div class="mail">
+                <img src="images/mail1.png" alt="">
+                <p>Dpp@gmail.com</p>
+           </div>
+
+           <div class="cust_service">
+                <img src="images/customer_service.png" id="cust_button" alt="">
+           </div>
+
+           <div class="cust_popup">
+                <img src="images/pop up.png" id="pop_up" alt="">
+           </div>
+
+       </div>
+
+       <div class="isi-kanan">
+           <div class="tulisan-kanan">
+
+               <form action="" id="form">
+                    <div class="nama">
+                        <label class="nama-p" for="nama-input">Nama</label>
+                        <input type="text" placeholder="Masukkan nama" name="nama-input" id="nama-input">
+                    </div>
+                   
+                    <div class="keluhan">
+                        <label class="keluhan-p" for="keluhan-input">Apa Keluhan anda</label>
+                        <input type="text" placeholder="Tuliskan keluhan anda" name="keluhan-input" id="keluhan-input">
+                    </div>
+                   
+                    <div class="lokasi">
+                        <label class="lokasi-p" for="lokasi-input">Lokasi</label>
+                        <input type="text" placeholder="Contoh: Lantai 3, Ruang A800" name="lokasi-input" id="lokasi-input">
+                    </div>
+
+                    <div class="kelas">
+                        <label class="kelas-p" for="kelas-input">Kelas</label>
+                        <input type="text" placeholder="Masukkan kelas anda" name="kelas-input" id="kelas-input">
+                    </div>
+
+                    <div class="gambar">
+                        <p><b>Gambar</b></p>
+                        <img src="images/Tambhkan file.png" alt="">
+                    </div>
+
+                    <div class="submit">
+                        <button id="submit_button" type="submit"><b>Submit</b></button>
+                    </div>
+               </form>
+
+                <div class="error">
+                    <label id="error-txt">[A Sample Error Dysfunctional Error]</label>
+                </div>
+
+           </div>
+       </div>
+   </div>
+
+   
+   <footer class="foot">
+    <div style="margin: 67px 0 0 150px; width: 64px; height: 20px; display: flex">
+        <a href="#"><img src="images/logoBcaKecil.png"></a>
+    </div>
+
+    <ul class="row" style="font-weight: 900">
+        <li class="col"><a href="#">Kantor Pusat</a></li>
+        <li class="col"><a href="#">Hubungi Kami</a></li>
+        <li class="col"><a href="#">Media Sosial</a></li>        
+    </ul>
+
+    <ul class="row">
+        <li class="col"><a href="#">Menara BCA, Grand Indonesia</a></li>
+        <li class="col"><a href="#"><img src="images/telefon.svg" style="display: inline"/> Halo BCA 1500888</a></li>
+        <li class="col"><a href="#"><img src="images/facebook.svg" style="display: inline"/> GoodLife BCA</a></li>
+        <li class="col"><a href="#"><img src="images/youtube.svg" style="display: inline"/> Solusi BCA</a></li>
+        <li class="col" style="color: white; width: 15rem">Dapatkan promo dan penawaran<br/>terbaik dari BCA</li>
+    </ul>
+
+    <ul class="row">
+        <li class="col"><a href="#">Jl. MH Thamrin No.1<br/>Jakarta Utara</a></li>
+        <li class="col"><a href="#"><img src="images/surat.svg" style="display: inline;"/> halobca@bca.co.id</a></li>
+        <li class="col"><a href="#"><img src="images/instagram.png" style="display: inline;"/> @goodlifebca</a></li>
+        <li class="col"><a href="#">@BankBCA</a></li>
+        <li class="col">
+            <form>
+                <input type="email" placeholder="Masukkan Email" required/>
+                <img style="margin-left: 50px" src="images/pointerKanan.svg"/>
+            </form>
+        </li>
+    </ul>
+    
+    <ul class="row">
+        <li class="col"><a href="#"><img src="images/loc.png" style="width: 12px; display: inline"/> Lokasi BCA Lainnya</a></li>
+        <li class="col"><a href="#"><img src="images/whatsapp.png" style="display: inline"/> +62 1234 5679</a></li>
+        <li class="col"><a href="#" style="text-decoration: underline;">Lihat Semua Media Sosial</a></li>
+    </ul>        
+
+    <div class="line"></div>
+
+    <ul class="row">
+        <li class="col" style="width: 20rem; margin-right: 10%">BCA berizin dan diawasi oleh Otoritas jasa Keuangan & Bank Indonesia</li>
+        <li class="col" style="width: 20rem">BCA merupakan peserta penjaminan LPS</li>
+        <li class="col" style="width: 30rem"><a style="margin: 1rem">SBDK</a> | <a style="margin: 1rem">Kebijakan</a> | <a style="margin: 1rem">Syarat dan Ketentuan</a></li>
+    </ul> 
+</footer>
+
+</body>
+</html>

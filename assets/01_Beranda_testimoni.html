@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=1440px"/>
+    <link rel="stylesheet" href="css/style01.css"/>
+    <script src="script.js"></script>
+    <title>Beranda</title>
+</head>
+
+<body>
+    <nav class="nav-testi">
+        <div class="nav-logo">
+            <a href="#">
+                <img src="images/logo.svg"/> <!-- Path relatif ke file gambar -->
+            </a>
+        </div>
+        
+        <ul class="nav-links">
+            <li class="link" style="width:4.5rem"><a href="01_Beranda.html"><img src="images/home.png"/></a></li>
+            <li class="link"><a href="02_Makanan.html">Menu Makanan</a></li>
+            <li class="link"><a href="03_Form_pengaduan.html">Form Pengaduan</a></li>
+            <li class="link"><a href="05_Form_Peminjaman.html">Fasilitas</a></li>
+            <li class="link" style="width:3rem"><a href="#"><img src="images/loc.png"/></a></li>
+            <li class="link"><a href="04_Login.html" style="display: flex">Log-in<img src="images/profile.png" style="margin: 0 0 0 0.618rem"/></a></li>
+        </ul>
+    </nav>
+
+    <div class="testi">
+        <div class="testi-isi">
+            <!-- <img src="images/tandaPanah.png" style="display: flex; width: 23px; height: 18px; transform: rotate(180deg); margin: 8rem 3rem 0 0"/> -->
+            <img src="images/ivan.png" class="testi-gambar" id="gambar-testi"/>
+            <div class="comment-wrapper">
+                <p id="comment-testi">PPTI benar-benar bermanfaat buat aku. Gak cuma belajar, di sini juga dipersiapkan untuk masuk dunia kerja. Tidak usah khawatir teman-teman di sini juga supportif saat kita kesusahan belajar</p>
+                <h4 id="comment-nama" class="nama-wrapper" style="margin-top: 1rem">Ivan Bryliant</h4>
+                <p class="kelas-wrapper" style="animation: slideInRight 1s ease-out">PPTI 18</p>    
+            </div>
+            <!-- <img src="images/tandaPanah.png" style="display: flex; width: 23x; height: 18px; margin: 8rem 0 0 3rem"/> -->
+        </div>
+    </div>
+    <ul class="testi-bawah">
+        <li onclick="changeImage('images/ivan.png', 1)"><img class="clicked" src="images/ivan.png"/></li>
+        <li onclick="changeImage('images/nikita.png', 2)"><img src="images/nikita.png"/></li>
+        <li onclick="changeImage('images/yosua.png', 3)"><img src="images/yosua.png"/></li>
+        <li onclick="changeImage('images/nana.png', 4)"><img src="images/nana.png"/></li>
+        <li onclick="changeImage('images/yedija.png', 5)"><img src="images/yedija.png"/></li>
+    </ul>
+    
+    <footer class="foot">
+        <div style="margin: 67px 0 0 150px; width: 64px; height: 20px; display: flex">
+            <a href="#"><img src="images/logoBcaKecil.png"></a>
+        </div>
+    
+        <ul class="row" style="font-weight: 900">
+            <li class="col"><a href="#">Kantor Pusat</a></li>
+            <li class="col"><a href="#">Hubungi Kami</a></li>
+            <li class="col"><a href="#">Media Sosial</a></li>        
+        </ul>
+    
+        <ul class="row">
+            <li class="col"><a href="#">Menara BCA, Grand Indonesia</a></li>
+            <li class="col"><a href="#"><img src="images/telefon.svg" style="display: inline"/> Halo BCA 1500888</a></li>
+            <li class="col"><a href="#"><img src="images/facebook.svg" style="display: inline"/> GoodLife BCA</a></li>
+            <li class="col"><a href="#"><img src="images/youtube.svg" style="display: inline"/> Solusi BCA</a></li>
+            <li class="col" style="color: white; width: 15rem">Dapatkan promo dan penawaran<br/>terbaik dari BCA</li>
+        </ul>
+
+        <ul class="row">
+            <li class="col"><a href="#">Jl. MH Thamrin No.1<br/>Jakarta Utara</a></li>
+            <li class="col"><a href="#"><img src="images/surat.svg" style="display: inline;"/> halobca@bca.co.id</a></li>
+            <li class="col"><a href="#"><img src="images/instagram.png" style="display: inline;"/> @goodlifebca</a></li>
+            <li class="col"><a href="#">@BankBCA</a></li>
+            <li class="col">
+                <form>
+                    <input type="email" placeholder="Masukkan Email" required/>
+                    <img style="margin-left: 50px" src="images/pointerKanan.svg"/>
+                </form>
+            </li>
+        </ul>
+        
+        <ul class="row">
+            <li class="col"><a href="#"><img src="images/loc.png" style="width: 12px; display: inline"/> Lokasi BCA Lainnya</a></li>
+            <li class="col"><a href="#"><img src="images/whatsapp.png" style="display: inline"/> +62 1234 5679</a></li>
+            <li class="col"><a href="#" style="text-decoration: underline;">Lihat Semua Media Sosial</a></li>
+        </ul>        
+
+        <div class="line"></div>
+
+        <ul class="row">
+            <li class="col" style="width: 20rem; margin-right: 10%">BCA berizin dan diawasi oleh Otoritas jasa Keuangan & Bank Indonesia</li>
+            <li class="col" style="width: 20rem">BCA merupakan peserta penjaminan LPS</li>
+            <li class="col" style="width: 30rem"><a style="margin: 1rem">SBDK</a> | <a style="margin: 1rem">Kebijakan</a> | <a style="margin: 1rem">Syarat dan Ketentuan</a></li>
+        </ul> 
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
