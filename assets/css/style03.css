@@ -1,0 +1,402 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url(./Font/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf) format('truetype');
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+nav a{
+    color: whitesmoke;
+}
+
+nav{
+    max-width: 1440px;
+    /* flex-direction: column; */
+    font-family: "Open Sans", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    margin: auto;
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    animation: slideInUp 0.2s ease-out;
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0%;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+.nav-form{
+    background-image: url(../images/bagianAtasForm.png);
+    /* background-color: cornflowerblue; */
+    height: 130px;
+    width: 100%;
+}
+
+.nav-logo{
+    max-width: 220px;
+    max-height: 90px;
+    flex-shrink: 0px;
+}
+
+.link{
+    margin: 0 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.nav-links{
+    flex-direction: row; /* elemen diatur horizontal */
+    flex-wrap: wrap;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* text-align: center;   */
+}
+
+
+.link a{
+    display: flex;
+    color: #dfdfdf;
+    align-items: center;
+    width: 7rem;
+    /* background-color: #7DFF9A; */
+}
+
+.link a:hover{
+    color: #2CBAFD;
+    /* text-decoration: underline; */
+}
+
+.atas{
+    text-align: center;
+    margin: 50px 3px 3px 3px;
+}
+
+h1{
+    color: darkblue;
+}
+
+img{
+    pointer-events: none;
+}
+
+.isi{
+    box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 700px;
+    max-width: 100%;
+    min-height: 522px;
+    min-width: 370px;
+    display: flex;
+    width: 1230px;
+    height: 700px;
+    border-radius: 30px;
+}
+
+.isi-kiri{
+    position: relative;
+}
+
+.isi-kiri img{
+    height: 700px;
+    border-radius: 10px;
+}
+
+.telpon{
+    position: absolute;
+    top: 0;
+}
+
+.telpon img{
+    margin-top: 280px;
+    margin-left: 50px;
+    height: 38px;
+}
+
+.telpon p{
+    color: white;
+    margin-left: 100px;
+    margin-top: -40px;
+}
+
+.mail{
+    position: absolute;
+    top: 0;
+}
+
+.mail img{
+    margin-top: 350px;
+    margin-left: 50px;
+    height: 38px;
+}
+
+.mail p{
+    color: white;
+    margin-left: 105px;
+    margin-top: -35px;
+}
+
+.tulisan-kiri{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    padding: 40px;
+}
+
+.tulisan-kiri p{
+    font-size: 20px;
+    font-family: Open Sans;
+}
+
+.tulisan-kiri h2{
+    font-size: 30px;
+}
+
+.isi-kanan{
+    margin: 50px;
+}
+
+.tulisan-kanan p{
+    font-size: 20px;
+    font-weight:normal;
+    color: #005caa;
+}
+
+.nama{
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#nama-input{
+    width: 290px;
+    border: 0;
+    border-bottom: 2px solid rgba(0,0,0, 0.3);
+}
+
+.nama-p{
+    font-size: 20px;
+    font-weight:bolder;
+    color: #005caa;
+    margin-bottom: 10px;
+}
+
+.keluhan{
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#keluhan-input{
+    width: 290px;
+    border: 0;
+    border-bottom: 2px solid rgba(0,0,0, 0.3);
+}
+
+.keluhan-p{
+    font-size: 20px;
+    font-weight:bolder;
+    color: #005caa;
+    margin-bottom: 10px;
+}
+
+.lokasi{
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#lokasi-input{
+    width: 290px;
+    border: 0;
+    border-bottom: 2px solid rgba(0,0,0, 0.3);
+}
+
+.lokasi-p{
+    font-size: 20px;
+    font-weight:bolder;
+    color: #005caa;
+    margin-bottom: 10px;
+}
+
+#kelas-input{
+    width: 290px;
+    border: 0;
+    border-bottom: 2px solid rgba(0,0,0, 0.3);
+}
+
+.kelas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 370px;
+    margin-top: -418px;
+    position: absolute;
+}
+
+.kelas-p{
+    font-size: 20px;
+    font-weight:bolder;
+    color: #005caa;
+    margin-bottom: 10px;
+}
+
+.gambar p{
+    font-size: 20px;
+    font-weight: normal;
+    color: #005caa;
+}
+
+.gambar{
+    margin-left: 370px;
+    margin-top: -297.5px;
+    position: absolute;
+}
+
+.submit{
+    margin-top: 50px;
+}
+
+button{
+    height: 38px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    background-color: #005caa;
+    color: white;
+    transition: ease-out 500ms;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #003360;
+}
+
+.error{
+    margin-top: 120px;
+    margin-left: 180px;
+}
+
+#error-txt{
+    display: none;
+    color: red;
+}
+
+label{
+    font-size: 20px;
+    font-weight:bolder;
+    color: #005caa;
+    margin-bottom: 10px;
+}
+
+.cust_service{
+    position: absolute;
+    top: 0;
+    margin-left: 350px;
+    margin-top: 600px;
+}
+
+#cust_button{
+    height: 65px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#cust_button:active{
+    transform: scale(0.95);
+}
+
+.cust_popup{
+    position: absolute;
+    top: 0;
+    margin-left: 85px;
+    margin-top: 510px;
+}
+
+#pop_up{
+    display: none;
+    height: 180px;
+}
+
+.foot {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    background-color: #031120;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.row {
+    list-style-type: none;
+    /* padding: 10px; */
+    display: flex;
+    justify-content: left;
+    margin-left: 150px;
+    /* margin-top: 30px;s */
+}
+
+.col {
+    color: #dfdfdf;
+    width: 8rem;
+    /* background-color: forestgreen; */
+    margin-right: 5%;
+    margin-top: 33px;
+}
+
+.col a {
+    text-decoration: none;
+    color: #dfdfdf;
+}
+
+.col a:hover {
+    color: cornflowerblue;
+    text-decoration: underline
+}
+
+.foot form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    width: 15rem;
+}
+
+form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}

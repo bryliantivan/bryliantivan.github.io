@@ -1,0 +1,510 @@
+
+@font-face{
+    font-family: 'Inter Regular';
+    src: url('../font/Inter/static/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Inter Black';
+    src: url('../font/Inter/static/Inter-Black.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Candal Regular';
+    src: url('../font/Candal/Candal-Regular.ttf') format('truetype');
+}
+
+html{
+    max-width: 1440px;
+    margin: 0 auto;
+    /* font-size: 12px; */
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto; /* Untuk membuat konten berada di tengah layar */
+}
+
+img {
+    pointer-events: none;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #F1F5F8;
+}
+
+img{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-makanan {
+    max-width: 100%;
+    height: 22rem;
+    flex-shrink: 0;
+    background-color: darkcyan;
+    background-image: url('../images/stallBackground.png');
+}
+
+nav a{
+    color: whitesmoke;
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0%;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+nav{
+    max-width: 1440px;
+    /* flex-direction: column; */
+    font-family: "Open Sans", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    margin: auto;
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    animation: slideInUp 0.2s ease-out;
+}
+
+.banner1, .banner2 {
+    font-family: 'Inter Regular', "Open Sans";
+    color: #dfdfdf;
+    text-align: right; /* Mengatur teks agar berada di tengah */
+    width: 100%; /* Mengatur lebar agar sesuai dengan kontainer */
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.banner1{
+    margin-top: 5%;
+    padding-right: 18%;
+}
+
+.banner2{
+    padding-right: 10%;
+}
+
+.banner-1{
+    font-family: 'Inter Black', sans-serif;
+    color: #FFBD4F;
+    font-weight: 900;
+}
+
+.banner-2{
+    font-family: 'Inter Black', sans-serif;
+    color: #7DFF9A;
+    font-weight: 900;
+}
+
+.nav-logo{
+    max-width: 220px;
+    max-height: 90px;
+    flex-shrink: 0px;
+}
+
+.nav-links{
+    flex-direction: row; /* elemen diatur horizontal */
+    flex-wrap: wrap;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* text-align: center;   */
+}
+
+.link{
+    margin: 0 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.link a{
+    display: flex;
+    color: #dfdfdf;
+    align-items: center;
+    width: 7rem;
+    /* background-color: #7DFF9A; */
+}
+
+.link a:hover{
+    color: #2CBAFD;
+    /* text-decoration: underline; */
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: blueviolet;
+    transition: all 0.3s ease-in-out;
+}
+
+.link a::hover::after{
+    width: 70%;
+}
+
+.lunch{
+    color: #1473E6;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 200px;
+    line-height: 26.4px;
+    margin: 30px 0px 0px 60px;
+}
+
+.garis1{
+    width: 32px;
+    height: var(--Radius-rounded, 4px);
+    border-radius: 1px;
+    background: #1473E6;
+    margin-left: 60px;
+}
+
+.frameMakanan{
+    display: flex;
+    margin-bottom: 8%;
+}
+
+.frameMakanan a{
+    color: #dfdfdf;
+    font-family: 'Candal Regular', 'Inter Black', sans-serif;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.6)
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0%;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+.stall{
+    display: flex;
+    width: 30%;
+    height: 14rem;
+    background-size: 100%;
+    border-radius: 45px;
+    margin: 3rem 0 0 10rem;
+    background-image: url('../images/stall.png');
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    animation: slideInLeft 0.5s ease-out;
+}
+
+.stall:hover{
+    transform: translateY(-20px) scale(1.05);
+    background-size: 110%;
+}
+
+.buffet {
+    display: flex;
+    width: 30%;
+    height: 14rem;
+    border-radius: 45px;
+    margin: 3rem 0 0 12rem;
+    background-image: url('../images/buffet.png');
+    background-size: 100%;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s, background-size 0.5s; /* Added background-size to the transition */
+    animation: slideInLeft 1s ease-out;
+}
+
+.buffet:hover {
+    transform: translateY(-20px) scale(1.05);
+    background-size: 110%; /* Enlarge the background on hover */
+}
+
+
+.border1{
+    display: flex;
+    width: 18rem;
+    height: 8rem;
+    padding: var(--Radius-rounded-None, 60px) var(--Radius-rounded-None);
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: transform 500ms;
+}
+
+.border1:hover{
+    transform: scaleY(1.2);
+}
+
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.foot {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    background-color: #031120;
+    padding: 20px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.row {
+    list-style-type: none;
+    /* padding: 10px; */
+    display: flex;
+    justify-content: left;
+    margin-left: 150px;
+    /* margin-top: 30px;s */
+}
+
+.col {
+    color: #dfdfdf;
+    width: 8rem;
+    /* background-color: forestgreen; */
+    margin-right: 5%;
+    margin-top: 33px;
+}
+
+.col a {
+    text-decoration: none;
+    color: #dfdfdf;
+}
+
+.col a:hover {
+    color: cornflowerblue;
+    text-decoration: underline
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+.line {
+    width: 1140px; /* Panjang garis */
+    height: 1px; /* Lebar garis */
+    background-color: whitesmoke; /* Warna garis (misalnya hitam) */
+    margin: 64px 120px 50px 120px;
+}
+
+.frameMakanan-stall{
+    display: flex;
+    /* background-color: gray; */
+    margin: 1.2rem 0 5rem 0;
+    width: 100%;
+    height: 27rem;
+    justify-content: center;
+}
+
+.list-stall{
+    display: block;
+    height: 100%;
+    width: 15rem;
+    /* background-color: green; */
+}
+
+.list-container-stall{
+    display: flex;
+    /* background-color: gray; */
+    justify-content: center;
+    width: 100%;
+    gap: 5%;
+}
+
+.gambar-makanan1{
+    width:100%;
+    height: 250px;
+    background-image: url(../images/parmigiana.png);
+    border-radius: 25px;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.gambar-makanan1:hover {
+    transform: scale(1.04);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.gambar-makanan2{
+    width:100%;
+    height: 250px;
+    background-image: url(../images/iga_penyet.png);
+    border-radius: 25px;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.gambar-makanan2:hover {
+    transform: scale(1.04);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.gambar-makanan3{
+    width:100%;
+    height: 250px;
+    background-image: url(../images/sate_ayam.png);
+    border-radius: 25px;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.gambar-makanan3:hover {
+    transform: scale(1.04);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.gambar-makanan4 {
+    width: 100%;
+    height: 250px;
+    background-image: url(../images/wonton.png);
+    border-radius: 25px;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.gambar-makanan4:hover {
+    transform: scale(1.04);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.frameMakanan-buffet{
+    height: 60rem;
+}
+
+.list-container-buffet{
+    margin: 2% 0 18% 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 7%;
+}
+
+.list-buffet{
+    display: block;
+    height: 250px;
+    width: 303px;
+    border-radius: 25px;
+}
+
+.judul-makanan{
+    color: #525252;
+    margin: 1rem 0 1.2rem 0;
+    font-family: 'Inter Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.deskripsi-makanan{
+    color: #949494;
+    font-family: 'Inter Regular', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.btn-makanan{
+    margin-top: 1.3rem;
+    border-radius: 20px;
+    background: #FFBD4F;
+    display: inline-flex;
+    padding: var(--Radius-rounded-None, 5.6px) var(--Radius-rounded-None, 12.46px) var(--Radius-rounded-None, 6.2px) var(--Radius-rounded-None, 12px);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #FFF;
+    font-family: 'Inter Regular', sans-serif;
+    font-size: 11.8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13.8px; /* 116.949% */
+    transition: transform 200ms ease-out;
+}
+
+.btn-makanan:hover {
+    transform: scale(1.05);
+}
+
+.stall-trivia{
+    display: flex;
+    margin-top: 1.2rem;
+    width: 100%;
+    height: 40rem;
+}
+
+.stall-trivia-container{
+    display: flex;
+    /* background-color: gray; */
+    list-style: none;
+    width: 100%;
+    gap: 5%;
+}
+
+.stall-gizi{
+    width: 40%;
+    height: 100%;
+    /* background-color: green; */
+    margin-left: -8%;
+}
+
+.stall-deskripsi{
+    width: 60%;
+    height: 100%;
+    /* background-color: coral; */
+    margin-right: 8%;
+}
+
+.makanan-buffet{
+    transition: transform 500ms, box-shadow 500ms;
+}
+
+.makanan-buffet:hover{
+    transform: scale(1.01);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,344 @@
+@font-face{
+    font-family: 'Inter Regular';
+    src: url('../font/Inter/static/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Inter Black';
+    src: url('../font/Inter/static/Inter-Black.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Candal Regular';
+    src: url('../font/Candal/Candal-Regular.ttf') format('truetype');
+}
+
+html{
+    max-width: 1440px;
+    margin: 0 auto;
+    /* font-size: 12px; */
+    /* background-color: #FFF; */
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto; /* Untuk membuat konten berada di tengah layar */
+    background-color: #FFF;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav a{
+    color: whitesmoke;
+}
+
+
+
+
+nav{
+    max-width: 1440px;
+    /* flex-direction: column; */
+    font-family: "Open Sans", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    margin: auto;
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    animation: slideInUp 0.2s ease-out;
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0%;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+ul li{
+    cursor: pointer;
+}
+
+.nav-beranda{
+    background-image: url(../images/bagianAtasBeranda.png);
+    /* background-color: cornflowerblue; */
+    height: 1380px;
+}
+
+.nav-logo{
+    max-width: 220px;
+    max-height: 90px;
+    flex-shrink: 0px;
+}
+
+.link{
+    margin: 0 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.nav-links{
+    flex-direction: row; /* elemen diatur horizontal */
+    flex-wrap: wrap;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* text-align: center;   */
+}
+
+
+.link a{
+    display: flex;
+    color: #dfdfdf;
+    align-items: center;
+    width: 7rem;
+    /* background-color: #7DFF9A; */
+}
+
+.link a:hover{
+    color: #2CBAFD;
+    /* text-decoration: underline; */
+}
+
+.foot {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    background-color: #031120;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.row {
+    list-style-type: none;
+    /* padding: 10px; */
+    display: flex;
+    justify-content: left;
+    margin-left: 150px;
+    /* margin-top: 30px;s */
+}
+
+.col {
+    color: #dfdfdf;
+    width: 8rem;
+    /* background-color: forestgreen; */
+    margin-right: 5%;
+    margin-top: 33px;
+}
+
+.col a {
+    text-decoration: none;
+    color: #dfdfdf;
+}
+
+.col a:hover {
+    color: cornflowerblue;
+    text-decoration: underline
+}
+
+img{
+    pointer-events: none;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    width: 15rem;
+}
+
+form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+.bagian-tengah{
+    height: 553px;
+    background-image: url(../images/pattern_material1.png);
+    background-repeat: no-repeat;
+    background-color: #FFF;
+    margin-top: 80px;
+}
+
+.bagian-tengah-teks{
+    width: 45%;
+    height: 100%;
+    float: left;
+    /* background-color: greenyellow; */
+}
+
+.bagian-tengah-gambar{
+    background-image: url(../images/groupGambar1.png);
+    background-repeat: no-repeat;
+    width: 55%;
+    float: right;
+    /* background-color: fuchsia; */
+    height: 100%;
+}
+
+.lihat-lebih{
+    margin: 50px 0 0 100px;
+    display: flex;
+    width: 180px;
+    height: 45px;
+    padding: 0px 25.25px 0px 25px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: #FFF;
+    cursor: pointer;
+    transition: transform 500ms,box-shadow 500ms;
+}
+
+.lihat-lebih:hover{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-1rem);
+}
+
+.nav-testi{
+    background-image: url(../images/pattern_material2.png);
+    background-repeat: no-repeat;
+    background-position: center top -20px;
+    /* transform: rotate(180deg); */
+}
+
+.testi{
+    height: 550px;
+    background-image: url(../images/backgroundTesti.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.testi-isi{
+    display: flex;
+    margin-top: 10rem;
+}
+
+.comment-wrapper{
+    display: flex;
+    width: 464px;
+    height: 133px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #031120;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    margin-top: 5.5rem;
+}
+
+.nama-wrapper{
+    color: #005CAB;
+    font-family: 'Inter Regular', sans-serif;
+    font-size: 20.2px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.kelas-wrapper{
+    color: #00B6F1;
+    font-family: 'Inter Regular', sans-serif;
+    font-size: 13.9px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px; /* 136.691% */
+}
+
+.testi-bawah{
+    display: flex;
+    list-style: none;
+    gap: 2.168rem;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.testi-bawah li img{
+    width: 63px;
+    border-radius: 100%;
+    transition: transform 0.3s, border-radius 1s, border 0.5s;
+    cursor: pointer;
+}
+
+.testi-bawah img.clicked {
+    transform: scale(1.328) translateY(-1rem);
+    border-radius: 255px;
+    border: 3px solid #FFC369;
+}
+
+.testi-bawah img:hover{
+    transform: scale(1.168) translateY(-0.618rem);
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0%;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0%;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+#comment-testi {
+animation: slideInRight 1s ease-in-out;
+}
+
+#comment-nama {
+animation: slideInRight 1s ease-in-out;
+animation-delay: 0.5s; /* Delay 0.5 detik */
+}
+
+.testi-gambar {
+    display: flex;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    margin-right: 7rem;
+    margin-left: 5.8rem;
+    box-shadow: 5px 8px 5px rgba(0,0,0,0.5);
+    animation: slideInLeft 1s ease-out;
+}
