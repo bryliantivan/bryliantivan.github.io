@@ -36,38 +36,47 @@
                     <br/>tidak memiliki unsur tanggal lahir, namun mudah Anda ingat.</p>
             </div>
 
-            <form action="#">
+            <form id="registerForm" action="01_Beranda.html">
                 <div class="inputbox" style="margin-left: 40px">
-                    <input type="nama" required placeholder=" Masukkan Nama Anda">
+                    <input id="nama" type="text" required placeholder="Masukkan Nama Anda">
                     <label style="font-weight:600">Nama</label>
                 </div>
-            
+        
                 <div class="inputbox" style="margin-left: 40px">
-                    <input type="email" required placeholder=" Contoh: Nikita@gmail.com">
+                    <input id="email" type="email" required placeholder="Contoh: Nikita@gmail.com">
                     <label style="font-weight:600">Email <span class="icon1"><ion-icon name="help-circle"></ion-icon></span></label>
-                    
                 </div>
-                
-
+        
                 <ul style="text-decoration: none; display: flex; gap: 20px">
                     <div class="inputbox">
-                        <input type="password" required placeholder=" Buat Password">
+                        <input id="password" type="password" required placeholder="Buat Password">
                         <label style="font-weight:600">Password <span class="icon2"><ion-icon name="help-circle"></ion-icon></span></label>
-                        
-                        
                     </div>
                 
                     <div class="inputbox">
-                        <input type="confirm" required placeholder=" Ulangi Password">
+                        <input id="confirmPassword" type="password" required placeholder="Ulangi Password">
                         <label style="font-weight:600">Ulangi Password</label>
                     </div>
-                
                 </ul>
-                
-
-                <button class ="butn">Register</button>
-
+        
+                <button type="submit" class="butn">Register</button>
             </form>
+        
+            <script>
+                document.getElementById("registerForm").addEventListener("submit", function (event) {
+                    var password = document.getElementById("password").value;
+                    var confirmPassword = document.getElementById("confirmPassword").value;
+        
+                    if (password.length < 5) {
+                        alert("Password harus memiliki panjang minimal 5 karakter.");
+                        event.preventDefault();
+                    } else if (password !== confirmPassword) {
+                        alert("Password dan Ulangi Password harus sama.");
+                        event.preventDefault();
+                    }
+                });
+            </script>
+            
         </div>
     </div></div>
 
