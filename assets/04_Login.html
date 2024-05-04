@@ -11,7 +11,7 @@
 <body>
     <nav>
         <div class="nav-logo">
-            <a href="#">
+            <a href="../index.html">
                 <img src="images/logo.svg"/>
             </a>
         </div>
@@ -26,19 +26,19 @@
         </ul>
     </nav>
 
-    <div style="display: flex; justify-content: center; margin-top: 30px"><div class ="wrapper">
+    <div style="display:flex; justify-content:center"><div class="wrapper">
         <div class="formbox">
             <p class="halo"><a class="halo1">Halo</a>, Talenta BCA!</p>
             <p class="selamat">Selamat Datang!</p>
             <form action="#">
                 <div class="inputbox">
                     <span class="icon"></span>
-                    <input type ="email" required>
+                    <input type="email" required>
                     <label>Email</label>
                 </div>
 
                 <div class="inputbox">
-                    <input type ="password" required>
+                    <input type="password" required>
                     <label>Password</label>
                     <span class="icon"><ion-icon name="eye-outline"></ion-icon></span>
                 </div>
@@ -46,19 +46,58 @@
                 <div class="lupa">
                     <a href="#">Lupa Password</a><a href="#">Reset Password</a>
                 </div>
-                <a href="01_Beranda.html"><div class ="butn">Login</div></a>
+                <div class="butn">Login</div>
 
                 <div class="login-register">
                     <p>Belum punya akun? <a href="04_Register.html" class="register-link">Registrasi</a></p>
-                </div>                
+                </div>
             </form>
         </div>
     </div></div>
 
+    <script>
+        document.querySelector('.icon').addEventListener('click', function() {
+            var passwordInput = document.querySelector('input[type="password"]');
+            var icon = document.querySelector('.icon ion-icon');
 
-    <script src="script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.setAttribute('name', 'eye-off-outline');
+            } else {
+                passwordInput.type = 'password';
+                icon.setAttribute('name', 'eye-outline');
+            }
+        });
+
+        document.querySelector('.butn').addEventListener('click', function() {
+            var email = document.querySelector('input[type="email"]').value;
+            var password = document.querySelector('input[type="password"]').value;
+
+            if (email.trim() === '' || password.trim() === '') {
+                alert('Email dan password harus diisi.');
+                return;
+            }
+
+            if (!validateEmail(email)) {
+                alert('Email tidak valid.');
+                return;
+            }
+
+            if (password.length < 5) {
+                alert('Password harus memiliki panjang minimal 5 karakter.');
+                return;
+            }
+
+            window.location.href = '01_Beranda.html';
+        });
+
+        function validateEmail(email) {
+            var re = /\S+@\S+\.\S+/;
+            return re.test(email);
+        }
+    </script>
+    
+    
 </body>
 
 <footer class="foot">
