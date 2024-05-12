@@ -8,10 +8,6 @@
     src: url('../font/Inter/static/Inter-Black.ttf') format('truetype');
 }
 
-*::-webkit-scrollbar {
-    display: none;
-}
-
 @font-face{
     font-family: 'Candal Regular';
     src: url('../font/Candal/Candal-Regular.ttf') format('truetype');
@@ -36,8 +32,6 @@ body {
     outline: none;
     border: none;
     box-sizing: border-box;
-    font-family: sans-serif;
-    overflow-x: hidden;
 }
 
 img{
@@ -52,10 +46,8 @@ nav a{
     color: whitesmoke;
 }
 
+
 nav{
-    /* background-image: url('../images/background jadi jadian.svg'); */
-    /* height: 500px; */
-    position: absolute;
     max-width: 1440px;
     /* flex-direction: column; */
     font-family: "Open Sans", sans-serif;
@@ -65,8 +57,8 @@ nav{
     padding: 2rem 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    gap: 13vw;
+    justify-content: space-between;
+    gap: 2rem;
     animation: slideInUp 0.2s ease-out;
 }
 
@@ -83,6 +75,12 @@ nav{
 
 ul li{
     cursor: pointer;
+}
+
+.nav-beranda{
+    background-image: url(../images/bagianAtasBeranda.png);
+    /* background-color: cornflowerblue; */
+    height: 1380px;
 }
 
 .nav-logo{
@@ -103,7 +101,7 @@ ul li{
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 2.5vw;
+    gap: 0.5rem;
     /* text-align: center;   */
 }
 
@@ -120,40 +118,6 @@ ul li{
     color: #2CBAFD;
     /* text-decoration: underline; */
 }
-
-.container3 {
-    font-family: 'Inter Regular';
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    height: 40vh;
-    width: 100vw;
-    /* background-color: red; */
-  }
-  .title3 {
-    text-align: center;
-    /* margin-bottom: 0rem; */
-
-    color: #005cab;
-    font-size: 3rem;
-
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: 'Inter Regular';
-    font-style: normal;
-    font-weight: 600;
-    line-height: 8rem;
-  }
-  .content-3 {
-    text-align: center;
-    padding: 0 15em;
-    color: #222;
-    font-family: 'Inter Regular';
-    font-size: 1.1rem;
-    font-style: normal;
-    font-weight: 400;
-  }
 
 .foot {
     font-family: "Open Sans", sans-serif;
@@ -421,7 +385,6 @@ animation-delay: 0.5s; /* Delay 0.5 detik */
 }
 
 .left1 {
-
   flex-direction: column;
   align-items: start;
   gap: 20px;
