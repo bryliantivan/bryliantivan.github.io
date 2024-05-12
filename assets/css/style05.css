@@ -300,11 +300,12 @@ form input {
 
 .container1 {
     height: 100vh;
-    width: 100vw;
-    display: flex;
-    /* justify-content: space-around; */
-    justify-content: space-evenly;
-    position: relative;
+  width: 100vw;
+  /* display: flex; */
+  /* justify-content: space-around; */
+  justify-content: space-evenly;
+  position: absolute;
+  z-index: -1;
 }
 
 .bgdashboard {
