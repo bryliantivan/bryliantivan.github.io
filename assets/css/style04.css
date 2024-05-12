@@ -32,6 +32,10 @@ nav{
     }
 }
 
+*::-webkit-scrollbar {
+    display: none;
+}
+
 .nav-form{
     background-image: url(../images/bagianAtasForm.png);
     /* background-color: cornflowerblue; */

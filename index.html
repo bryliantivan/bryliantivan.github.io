@@ -9,12 +9,15 @@
 </head>
 
 <body>
+
     <div class="nav-beranda">
+        
         <nav>
-            <a href="#"><div class="nav-logo">
-                    <img src="assets/images/logo.svg"/>
-            </div></a>
-            
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <img src="assets/images/logo.svg"/> <!-- Path relatif ke file gambar -->
+                </a>
+            </div>
             <ul class="nav-links">
                 <li class="link" style="width:4.5rem"><a href="#"><img src="assets/images/home.png"/></a></li>
                 <li class="link"><a href="assets/02_Makanan.html">Menu Makanan</a></li>
@@ -25,55 +28,376 @@
             </ul>
         </nav>
     </div>
-    <img src="assets/images/bagianTengahBeranda.png"/>
-    <div class="bagian-tengah">
-        <div class="bagian-tengah-teks">
-            <h4 style=
-            "color: #FFF;
-            font-family: 'Inter Regular', sans-serif;
-            font-size: 40px;
+
+    <div class="container1">
+        
+
+        <div class="left1">
+          <div class="judul1">
+            <b>Temukan Jalanmu untuk</b><br />
+            <b>Berinovasi dan Mewujudkan</b><br />
+            <b>Mimpi</b><br />
+          </div>
+          <p>
+            Jelajahi dan temukan tujuan karirmu bersama BCA<br />
+            #MungkinLoCocok kerja di BCA<br />
+          </p>
+        </div>
+  
+        <div class="right1">
+          <img src="assets/images/foto kanan temukan.svg" alt="image" />
+        </div>
+  
+        <img
+          class="bgdashboard"
+          src="assets/images/background jadi jadian.svg"
+          alt="background"
+        />
+      </div>
+  
+      <div class="container2">
+        <div class="left2">
+          <div class="left2-child">
+            <img src="assets/images/foto 1 tentang bca.svg" alt="image1" />
+            <img src="assets/images/foto 2 tentang bca.svg" alt="image2" />
+            <img src="assets/images/foto 3 tentang bca.svg" alt="image3" />
+          </div>
+        </div>
+  
+        <div class="right2">
+          <div class="judul2"><b>Tentang BCA</b></div>
+          <p>
+            BCA selalu mengusahakan karyawan dapat bekerja sesuai dengan potensi
+            dan kemampuan mereka serta mempelajari hal-hal baru setiap harinya.
+            Kami percaya jika hal itu dibudayakan di dalam lingkungan BCA, akan
+            membangun semangat untuk terus berinovasi.
+          </p>
+        </div>
+      </div>
+      
+      <div class="container3">
+        <div class="title3">Berkarir Bersama Kami</div>
+        <div class="content-3">
+          Untuk kamu yang sedang mencari pengalaman baru dalam berkarir, BCA
+          menyediakan 2 jenis lowongan, Fresh Graduate dan Experienced. Fresh
+          Graduate sendiri memiliki 2 kriteria lagi, yaitu Program dan Staf,
+          sedangkan Experienced adalah untuk kamu yang sudah memiliki pengalaman
+          di dunia kerja. Selain itu, terdapat Magang Bakti untuk lulusan SMA dan
+          SMK.
+        </div>
+      </div>
+      <style>
+        .container-4 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+  
+          width: 100vw;
+          height: 80vh;
+        }
+  
+        .content4-wrapper {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+  
+          width: 100%;
+          height: 40%;
+          padding: 0 10rem 0 10rem;
+        }
+  
+        .inner4-wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+  
+          width: 40%;
+          gap: 0.8rem;
+        }
+  
+        .title4 {
+          color: #00b6f1;
+          font-family: 'Inter Regular';
+          font-size: 2rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 2rem; /* 119.601% */
+        }
+        .text4 {
+          color: #222;
+          font-family: 'Inter Regular';
+          font-size: 1.1rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.4rem; /* 181.132% */
+        }
+  
+        .image4-wrapper {
+          display: flex;
+          align-items: center;
+          justify-self: center;
+          /* background-color: red; */
+        }
+  
+        .image4-wrapper img {
+          height: 100%;
+        }
+        .btn4-daftar {
+            /* display: flex; */
+            color: #005cab;
+            font-family: 'Inter Regular';
+            font-size: 1rem;
             font-style: normal;
             font-weight: 600;
-            line-height: 48px;
-            margin-top: 45px;
-            text-align: center;
-            ">Kehidupan Kami</h4>
-            <div style="
-            color: #FFF;
-            font-family: 'Inter Regular', sans-serif;
-            font-size: 15px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 25px;
+            line-height: 1.8 rem; /* 170.414% */
             text-align: left;
-            padding: 10px 0 0 100px;
-            ">
-                <p>
-                    <br/>Ketika kami berada sendiri, masing-masing dari kami memiliki misi pribadi yang ingin kami capai. 
-                    <br/>Namun, ketika bersama-sama di BCA, kami berusaha untuk menyatukan
-                    <br/>apa yang menjadi tujuan kami.
-                </p>
-                <p style="font-weight: 500">
-                    <br/>Cari tahu lebih tentang bagaimana kami bekerja dan
-                    <br/>beraktivitas di BCA.
-                </p>
-                <a href="assets/01_Beranda_testimoni.html"><div class="lihat-lebih"><p style="
-                color: #005CAB;
-                font-family: 'Inter Regular', sans-serif;
-                font-size: 13.5px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 45px; /* 333.333% */
-                text-transform: uppercase;
-                ">LIHAT LEBIH ></p></div></a>
+            padding: 0;
+        }
+      </style>
+      <div class="container4">
+        <div class="content4-wrapper">
+          <div class="inner4-wrapper">
+            <div class="title4">Lulusan Baru</div>
+            <div class="text4">
+              Untuk kamu yang baru memulai karir, Fresh Graduate memiliki 2
+              kriteria, yaitu Program dan Staf.
             </div>
+            <a href="#" class="btn4-daftar"
+              >Daftar <b>></b></a>
+          </div>
+          <div class="image4-wrapper">
+            <img src="assets/images/fresh graduate.svg" alt="" />
+          </div>
+        </div>
+        <div class="content4-wrapper">
+          <div class="image4-wrapper">
+            <img src="assets/images/magang bakti.svg" alt="" />
+          </div>
+          <div class="inner4-wrapper">
+            <div class="title4">Magang Bakti</div>
+            <div class="text4">
+              Untuk kamu yang baru yang lulusan SMA, SMK, ataupun perguruan tinggi, Program magang ini adalah pilihan yang tepat buat kamu
+              kriteria, yaitu Program dan Staf.
+            </div>
+            <a href="#" class="btn4-daftar"
+              >Lihat Lebih <b>></b></a>
+          </div>
+        </div>
+      </div>
+      <style>
+        .container-5 {
+          margin-top: 3rem;
+          width: 100vw;
+          height: 90vh;
+          border-radius: 100px 0px 0px 0px;
+          background: linear-gradient(180deg, #f0fcfe 0%, #fff 75.5%);
+        }
+        .title-5-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          gap: 0.75rem;
+  
+          height: 30%;
+        }
+        .title-5-title {
+          color: #005cab;
+          font-family: 'Inter Regular';
+          font-size: 2rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 3rem; /* 120.603% */
+        }
+  
+        .title-5-text {
+          color: #005cab;
+          font-family: 'Inter Regular';
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.8rem; /* 181.132% */
+          padding: 0 26rem;
+          text-align: center;
+        }
+        .content-5-content {
+          height: 40%;
+          width: 100%;
+          padding: 0 10rem;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-evenly;
+        }
+        .content-5-content-title {
+          color: #00b6f1;
+          text-align: left;
+          font-family: 'Inter Regular';
+          font-size: 1.8rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 2rem; /* 119.601% */
+        }
+        .content-5-content-text {
+          color: #222;
+          font-family: 'Inter Regular';
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.5rem; /* 181.132% */
+        }
+        .content-5-content-inner-wrapper {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          gap: 0.3rem;
+  
+          width: 40%;
+          /* background-color: red; */
+        }
+        .content-5-content-image-wrapper {
+          width: 20%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          /* background-color: red; */
+        }
+      </style>
+      <div class="container-5">
+        <div class="title-5-container">
+          <div class="title-5-title">Beasiswa BCA</div>
+          <div class="title-5-text">
+            Merupakan beasiswa yang diberikan oleh BCA kepada para lulusan
+            SMA/SMK/sederajat yang berprestasi dalam bentuk program pendidikan,
+            menghasilkan tenaga kerja profesional
+          </div>
+        </div>
+        <div class="content-5-content">
+          <div class="content-5-content-image-wrapper">
+            <img src="assets/images/ppbp.svg" alt="" />
+          </div>
+          <div class="content-5-content-inner-wrapper">
+            <div class="content-5-content-title">
+              Program Pendidikan Bisnis dan Perbankan (PPBP)
+            </div>
+            <div class="content-5-content-text">
+              Program pendidikan yang sebelumnya dikenal dengan nama Program
+              Pendidikan Akuntansi ini telah dikembangkan oleh BCA sejak 1996.
+              Melalui PPBP, BCA berharap dapat mendukung terwujudnya sumber daya
+              manusia yang berkualitas dan siap memasuki dunia kerja, khususnya
+              bagi industri perbankan.
+            </div>
+          </div>
+        </div>
+        <div class="content-5-content">
+          <div class="content-5-content-inner-wrapper">
+            <div class="content-5-content-title">
+              Program Pendidikan Teknik Informatika (PPTI)
+            </div>
+            <div class="content-5-content-text">
+              Program Pendidikan Teknik Informatika (PPTI) dirancang untuk
+              mengimbangi peningkatan kebutuhan SDM dengan perkembangan teknologi
+              di industri perbankan. Para lulusan PPTI diharapkan dapat menjadi
+              sumber daya manusia yang handal, khususnya di bidang teknik
+              informatika.
+            </div>
+          </div>
+          <div class="content-5-content-image-wrapper">
+            <img src="assets/images/ppti.svg" alt=""/>
+          </div>
+        </div>
+      </div>
+  
+      <style>
+        .bagian-tengah {
+          height: 553px;
+          background-image: url('assets/images/pattern_material1.png');
+          background-repeat: no-repeat;
+          background-color: #fff;
+          margin-top: 80px;
+        }
+  
+        .bagian-tengah-teks {
+          width: 45%;
+          height: 100%;
+          float: left;
+          /* background-color: greenyellow; */
+        }
+  
+        .bagian-tengah-gambar {
+          background-image: url(assets/images/groupGambar1.png);
+          background-repeat: no-repeat;
+          width: 55%;
+          float: right;
+          /* background-color: fuchsia; */
+          height: 100%;
+        }
+      </style>
+      <div class="bagian-tengah">
+        <div class="bagian-tengah-teks">
+          <h4
+            style="
+              color: #fff;
+              font-family: 'Inter Regular', sans-serif;
+              font-size: 40px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 48px;
+              margin-top: 45px;
+              text-align: center;
+            "
+          >
+            Kehidupan Kami
+          </h4>
+          <div
+            style="
+              color: #fff;
+              font-family: 'Inter Regular', sans-serif;
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 25px;
+              text-align: left;
+              padding: 10px 0 0 100px;
+            "
+          >
+            <p>
+              <br />Ketika kami berada sendiri, masing-masing dari kami memiliki
+              misi pribadi yang ingin kami capai. <br />Namun, ketika bersama-sama
+              di BCA, kami berusaha untuk menyatukan <br />apa yang menjadi tujuan
+              kami.
+            </p>
+            <p style="font-weight: 500">
+              <br />Cari tahu lebih tentang bagaimana kami bekerja dan
+              <br />beraktivitas di BCA.
+            </p>
+            <a href="assets/01_Beranda_testimoni.html"
+              ><div class="lihat-lebih">
+                <p
+                  style="
+                    color: #005cab;
+                    font-family: sans-serif;
+                    font-size: 13.5px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 45px; /* 333.333% */
+                    text-transform: uppercase;
+                  "
+                >
+                  LIHAT LEBIH >
+                </p>
+              </div></a
+            >
+          </div>
         </div>
         <div class="bagian-tengah-gambar"></div>
-    </div>
+      </div>
     
     <footer class="foot">
         <div style="margin: 67px 0 0 150px; width: 64px; height: 20px; display: flex">
-            <a href="#"><img src="images/logoBcaKecil.png"></a>
+            <a href="#"><img src="assets/images/logoBcaKecil.png"></a>
         </div>
     
         <ul class="row" style="font-weight: 900">
@@ -84,28 +408,28 @@
     
         <ul class="row">
             <li class="col"><a href="#">Menara BCA, Grand Indonesia</a></li>
-            <li class="col"><a href="#"><img src="images/telefon.svg" style="display: inline"/> Halo BCA 1500888</a></li>
-            <li class="col"><a href="#"><img src="images/facebook.svg" style="display: inline"/> GoodLife BCA</a></li>
-            <li class="col"><a href="#"><img src="images/youtube.svg" style="display: inline"/> Solusi BCA</a></li>
+            <li class="col"><a href="#"><img src="assets/images/telefon.svg" style="display: inline"/> Halo BCA 1500888</a></li>
+            <li class="col"><a href="#"><img src="assets/images/facebook.svg" style="display: inline"/> GoodLife BCA</a></li>
+            <li class="col"><a href="#"><img src="assets/images/youtube.svg" style="display: inline"/> Solusi BCA</a></li>
             <li class="col" style="color: white; width: 15rem">Dapatkan promo dan penawaran<br/>terbaik dari BCA</li>
         </ul>
 
         <ul class="row">
             <li class="col"><a href="#">Jl. MH Thamrin No.1<br/>Jakarta Utara</a></li>
-            <li class="col"><a href="#"><img src="images/surat.svg" style="display: inline;"/> halobca@bca.co.id</a></li>
-            <li class="col"><a href="#"><img src="images/instagram.png" style="display: inline;"/> @goodlifebca</a></li>
+            <li class="col"><a href="#"><img src="assets/images/surat.svg" style="display: inline;"/> halobca@bca.co.id</a></li>
+            <li class="col"><a href="#"><img src="assets/images/instagram.png" style="display: inline;"/> @goodlifebca</a></li>
             <li class="col"><a href="#">@BankBCA</a></li>
             <li class="col">
                 <form>
                     <input type="email" placeholder="Masukkan Email" required/>
-                    <img style="margin-left: 50px" src="images/pointerKanan.svg"/>
+                    <img style="margin-left: 50px" src="assets/images/pointerKanan.svg"/>
                 </form>
             </li>
         </ul>
         
         <ul class="row">
-            <li class="col"><a href="#"><img src="images/loc.png" style="width: 12px; display: inline"/> Lokasi BCA Lainnya</a></li>
-            <li class="col"><a href="#"><img src="images/whatsapp.png" style="display: inline"/> +62 1234 5679</a></li>
+            <li class="col"><a href="#"><img src="assets/images/loc.png" style="width: 12px; display: inline"/> Lokasi BCA Lainnya</a></li>
+            <li class="col"><a href="#"><img src="assets/images/whatsapp.png" style="display: inline"/> +62 1234 5679</a></li>
             <li class="col"><a href="#" style="text-decoration: underline;">Lihat Semua Media Sosial</a></li>
         </ul>        
 
